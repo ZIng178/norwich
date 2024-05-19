@@ -19,7 +19,7 @@ const TicketForm = () => {
     const res = await fetch("/api/Tickets", {
       method: "POST",
       body: JSON.stringify({ formData }),
-      "content-type": "application/json",
+      "Content-type": "application/json",
     });
 
     if (!res.ok) {
